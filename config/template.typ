@@ -69,7 +69,6 @@
   )
 
 
-  set heading(numbering: "1.")
   set terms(separator: ": ")
   
   // For nested enumerations

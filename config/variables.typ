@@ -5,14 +5,15 @@
 #let correo = "correo@uc.cl"
 #let titulo = "Título"
 #let tema = "Tema"
+#let archivo = 0 //Tarea = 0, Informe = 1
 
 // CURSO
 
 #let universidad = "Pontificia Universidad Catolica de Chile"
 #let escuela = "Escuela de Ingeniería" // Establecer como "" cuando se quiere omitir en formato opti
-#let departamento = "Departamento de Ingeniería Mecánica y Metalúrgica"
-#let nombre-curso = "Nombre del Curso"
-#let sigla = "SIG0000"
+#let departamento = "Departamento de Ingeniería Industrial y de Sistemas"
+#let nombre-curso = "Optimización"
+#let sigla = "ICS1113"
 
 // OTROS
 

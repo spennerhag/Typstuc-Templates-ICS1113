@@ -1,5 +1,6 @@
 // Initial template config
 #import "config/template.typ" as template
+#import "config/variables.typ": *
 #show: doc => template.config(doc, darkmode: false)
 
 // Useful packages for maths, presentations and diagrams
@@ -13,10 +14,12 @@
 //#import "@preview/tiaoma:0.3.0" as tiaoma
 
 // Add here any custom configs
+#if archivo == 0 [#include "content/portada_tarea_opti.typ"
+]else if archivo == 1 [#include "content/portada_informe_opti.typ"
+]
+#set heading(numbering: if archivo == 1 { "1." } else { none })
 
 
-
-#include "content/portada_tarea.typ"
 
 = Plantilla de informe en Typst
 
@@ -102,7 +105,7 @@ Del un modo similar se pueden insertar tablas, usando la función `#table()` den
 = Uso de IA Generativa
 #lorem(100)
 
-#bibliography("bibliography.yml", style: "ieee", title: "Referencias", full: true)
+#bibliography("bibliography.yml", style: "apa", title: "Referencias", full: true) //Dos ejemplos de formatos disponibles son apa e ieee
 
 = Anexo
 #if true [

@@ -4,8 +4,8 @@ Plantillas en Typst para informes y tareas con el formato de ICS1113. Proyecto o
 
 ## Uso
 
-1. Edita [config/variables.typ](config/variables.typ) con los datos de tu documento.
-2. Selecciona una de las portadas de [content/portada_{name}.typ](content/) y edita el nombre del `include` al comienzo de [main.typ](main.typ) (`#include "content/portada_tarea.typ"`).
+1. Edita [config/variables.typ](config/variables.typ) con los datos de tu documento. 
+2. En la variable archivo escoga el tipo de documento que se va a utilizar, archivo=0 para tareas y archivo=1 para informes.
 3. Edita la configuración general de acuerdo a tus necesidades en [config/template.typ](config/template.typ).
 4. Edita tu documento dentro de [main.typ](main.typ).
 5. Compila el documento con Typst.
@@ -16,7 +16,7 @@ Plantillas en Typst para informes y tareas con el formato de ICS1113. Proyecto o
 - `bibliography.bib`
 - `config/`
   - `template.typ`: configuración general.
-  - `variables.typ`: nombre, fecha, autores, etc.
+  - `variables.typ`: nombre, fecha, autores, archivo, etc.
 - `content/`
   - `tarea_opti.typ`
   - `informe_opti.typ`
