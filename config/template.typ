@@ -14,19 +14,11 @@
           stroke: none,
           image("../assets/logo.pdf", width: 100%),
           
-          [#if formato == 0 [#set par(leading: 0.65em)
-            #smallcaps([
-              #universidad\
-              #escuela\
-              #departamento\ ])
-            *#sigla* -- *#nombre-curso*
-          ] else if formato == 1 [#set par(leading: 0.65em)
-            #smallcaps([
+          [#smallcaps([
               #universidad\
               #if escuela != "" [ #escuela \ ]
               #departamento\ 
-            #sigla -- #nombre-curso ])
-          ]],
+            #sigla -- #nombre-curso ])],
         )
       ]
     }
