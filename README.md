@@ -1,6 +1,6 @@
 # Typstuc Templates
 
-Plantillas en Typst para informes, tareas y ayudantías con el formato genérico usado en ingeniería UC.
+Plantillas en Typst para informes y tareas con el formato de ICS1113. Proyecto original creado por Vicente Zúñiga colaborado por Sebastián Pennerhag, esta versión simplificada del proyecto de TypstUC para uso exclusivo dentro del ramo, para más plantillas revisar el proyecto original.
 
 ## Uso
 
@@ -18,10 +18,8 @@ Plantillas en Typst para informes, tareas y ayudantías con el formato genérico
   - `template.typ`: configuración general.
   - `variables.typ`: nombre, fecha, autores, etc.
 - `content/`
-  - `ayudantia.typ`
-  - `biomecanica.typ`
-  - `informe.typ`
-  - `tarea.typ`
+  - `tarea_opti.typ`
+  - `informe_opti.typ`
 - `main.typ`: main file
 - `main.pdf`: compiled file
 
